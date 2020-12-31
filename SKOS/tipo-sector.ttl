@@ -1,0 +1,51 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector> a skos:ConceptScheme;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/residencial-comercial-institucional> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/industria> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/transporte-carretera> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/otros-medios-transporte> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/tratamiento-eliminacion-resiudos> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/otros> ;
+    dc:creator "Francisco Yedro (Universidad Politécnica de Madrid)" ;
+    dc:date "2020-12-27"^^xsd:date ;
+    skos:prefLabel "Tipos de sectores contaminantes de gases efecto invernadero (GEI)"@es ;
+    dc:title "Tesauro que recoge los tipos de indicadores de ruido global recogidos durante un periodo del día"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/residencial-comercial-institucional> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector> ;
+  skos:notation "residencial-comercial-institucional" ;
+	skos:prefLabel "residencial-comercial-institucional" ;
+  skos:prefLabel "Residencial, Comercial e Institucional"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/industria> a skos:Concept ;
+  skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector> ;
+  skos:notation "industria" ;
+  skos:prefLabel "industria" ;
+  skos:prefLabel "Industria"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/transporte-carretera> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector> ;
+  skos:notation "transporte-carretera" ;
+	skos:prefLabel "transporte-carretera" ;
+  skos:prefLabel "Transporte por carretera"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/otros-medios-transporte> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector> ;
+  skos:notation "otros-medios-transporte" ;
+	skos:prefLabel "otros-medios-transporte" ;
+  skos:prefLabel "Otros modos de transporte"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/tratamiento-eliminacion-resiudos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector> ;
+  skos:notation "tratamiento-eliminacion-resiudos" ;
+	skos:prefLabel "tratamiento-eliminacion-resiudos" ;
+  skos:prefLabel "Tratamiento y eliminación de residuos"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector/otros> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-sector> ;
+  skos:notation "otros" ;
+	skos:prefLabel "otros" ;
+  skos:prefLabel "Otros"@es .

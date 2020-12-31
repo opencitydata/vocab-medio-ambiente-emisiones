@@ -1,0 +1,28 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix sdmx-dimension: <http://purl.org/linked-data/sdmx/2009/dimension#> .
+@prefix emisiones: <http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#> .
+
+
+<http://vocab.ciudadesabiertas.es/recurso/medio-ambiente/emisiones/DSD_EmisionesPorSector> a qb:DataStructureDefinition ;
+rdfs:label "Estructura de los datos relacionados con los sectores contaminantes que generan los gases de efecto invernadero de alcance 1, 2 y 3"@es ;
+skos:notation "DSD_EmisionesPorSector" .
+
+<http://vocab.ciudadesabiertas.es/recurso/medio-ambiente/emisiones/DSD_EmisionesPorSector> qb:component _:node1egmfx1 .
+_:node1egmfx1 qb:dimension sdmx-dimension:refArea .
+
+<http://vocab.ciudadesabiertas.es/recurso/medio-ambiente/emisiones/DSD_EmisionesPorSector> qb:component _:node1egmfx2 .
+_:node1egmfx2 qb:dimension sdmx-dimension:refPeriod .
+
+<http://vocab.ciudadesabiertas.es/recurso/medio-ambiente/emisiones/DSD_EmisionesPorSector> qb:component _:node1egmfx3 .
+_:node1egmfx3 qb:dimension emisiones:tipoSector .
+
+<http://vocab.ciudadesabiertas.es/recurso/medio-ambiente/emisiones/DSD_EmisionesPorSector> qb:component _:node1egmfx4 .
+_:node1egmfx4 qb:dimension emisiones:tipoAlcance .
+
+<http://vocab.ciudadesabiertas.es/recurso/demografia/DSD_EmisionesPorSector> qb:component _:node1egmfx5 .
+_:node1egmfx5 qb:measure emisiones:emisionesGEI .

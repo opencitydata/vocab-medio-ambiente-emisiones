@@ -1,0 +1,30 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-alcance> a skos:ConceptScheme;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-alcance/1> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-alcance/2> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-alcance/3> ;
+    dc:creator "Francisco Yedro (Universidad Politécnica de Madrid)" ;
+    dc:date "2020-12-27"^^xsd:date ;
+    skos:prefLabel "Tipos de sectores contaminantes de gases efecto invernadero (GEI)"@es ;
+    dc:title "Tesauro que recoge los tipos de indicadores de ruido global recogidos durante un periodo del día"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-alcance/1> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-alcance> ;
+  skos:notation "1" ;
+	skos:prefLabel "1" ;
+  skos:prefLabel "Alcance 1, fuentes fijas y móviles. Corresponden a emisiones directas"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-alcance/2> a skos:Concept ;
+  skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-alcance> ;
+  skos:notation "2" ;
+  skos:prefLabel "2" ;
+  skos:prefLabel "Alcance 2, engloban a aquellas producidas en la generación de la energía eléctrica consumida en la ciudad de Madrid. Corresponden a emisiones indirectas"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-alcance/3> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-alcance> ;
+  skos:notation "3" ;
+	skos:prefLabel "3" ;
+  skos:prefLabel "Alcance 3, son las asociadas a las pérdidas que se producen en el transporte de la energía eléctrica consumida por la ciudad desde el punto de generación hasta el punto de consumo final. Corresponden a emisiones indirectas"@es .

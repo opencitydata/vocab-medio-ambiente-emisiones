@@ -1,0 +1,348 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/cubo-emisiones#"
+     xml:base="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/cubo-emisiones"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cube="http://purl.org/linked-data/cube#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <owl:Ontology rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/cubo-emisiones">
+        <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/cubo-emisiones"/>
+        <owl:imports rdf:resource="http://purl.org/linked-data/cube"/>
+        <terms:issued>2020-12-30</terms:issued>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <terms:title xml:lang="es">Vocabulario para la representación de los cubos de datos de emisiones de gases de efecto invernadero</terms:title>
+        <dc:contributor>Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:contributor>
+        <dc:contributor>Edna Ruckaus (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:contributor>
+        <terms:created>2020-12-09</terms:created>
+        <dc:rights>Creative Commons Attribution 4.0 International (CC BY 4.0)</dc:rights>
+        <dc:creator>Francisco Yedro (Ontology Engineering Group - Universidad Politécnica de Madrid)</dc:creator>
+        <terms:title xml:lang="en">Vocabulary for data cubes representation of greenhouse effect gases</terms:title>
+        <dc:creator>Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)</dc:creator>
+        <terms:hasFormat>http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/cubo-emisiones.owl</terms:hasFormat>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasFormat -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/hasFormat"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/linked-data/cube#component -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/linked-data/cube#component"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#notation -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#notation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/linked-data/sdmx/2009/dimension#refArea -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/linked-data/sdmx/2009/dimension#refArea"/>
+    
+
+
+    <!-- http://purl.org/linked-data/sdmx/2009/dimension#refPeriod -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#CS_EmisionesPorSector_tipoAlcance -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#CS_EmisionesPorSector_tipoAlcance">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#ComponentSpecification"/>
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoAlcance"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#CS_EmisionesPorSector_tipoSector -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#CS_EmisionesPorSector_tipoSector">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#ComponentSpecification"/>
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoSector"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#electricidadFacturada -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#electricidadFacturada"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionPerCapita -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionPerCapita"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionPorPIB -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionPorPIB"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionesGEI -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionesGEI"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoAlcance -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoAlcance"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoCompuestoContaminante -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoCompuestoContaminante"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoSector -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoSector"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_emisionPerCapita -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_emisionPerCapita">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#ComponentSpecification"/>
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionPerCapita"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_emisionPorPIB -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_emisionPorPIB">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionPorPIB"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_refArea -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_refArea">
+        <cube:dimension rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_refPeriod -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_refPeriod">
+        <cube:dimension rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_emisionesGEI -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_emisionesGEI">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionesGEI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_refArea -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_refArea">
+        <cube:dimension rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_refPeriod -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_refPeriod">
+        <cube:dimension rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_tipoCompuestoContaminante -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_tipoCompuestoContaminante">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoCompuestoContaminante"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_electricidadFacturada -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_electricidadFacturada">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#electricidadFacturada"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refArea -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refArea">
+        <cube:dimension rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refPeriod -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refPeriod">
+        <cube:dimension rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_emisionesGEI -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_emisionesGEI">
+        <cube:dimension rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionesGEI"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_refArea -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_refArea">
+        <cube:dimension rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refArea"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_refPeriod -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_refPeriod">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#ComponentSpecification"/>
+        <cube:dimension rdf:resource="http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPerCapitaYPIB -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPerCapitaYPIB">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_emisionPerCapita"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_emisionPorPIB"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_refArea"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_refPeriod"/>
+        <rdfs:label xml:lang="es">Estructura de los datos relacionados con los indicadores obtenidos debido a las emisiones de gases efecto invernadero emitidas por número de habitante y por unidad de PIB</rdfs:label>
+        <skos:notation>DSD_EmisionesPerCapitaYPIB</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPorCompuesto -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPorCompuesto">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_emisionesGEI"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_refArea"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_refPeriod"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_tipoCompuestoContaminante"/>
+        <rdfs:label xml:lang="es">Estructura de los datos relacionados con los compuestos contaminantes que generan los gases de efecto invernadero de alcance 1</rdfs:label>
+        <skos:notation xml:lang="es">DSD_EmisionesPorCompuesto</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPorElectricidad -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPorElectricidad">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_electricidadFacturada"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refArea"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refPeriod"/>
+        <rdfs:label xml:lang="es">Estructura de los datos relacionados con la electricidad facturada generan los gases de efecto invernadero de alcance 2 y 3</rdfs:label>
+        <skos:notation>DSD_EmisionesPorElectricidad</skos:notation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPorSector -->
+
+    <owl:NamedIndividual rdf:about="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPorSector">
+        <rdf:type rdf:resource="http://purl.org/linked-data/cube#DataStructureDefinition"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#CS_EmisionesPorSector_tipoAlcance"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#CS_EmisionesPorSector_tipoSector"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refPeriod"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_emisionesGEI"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_refArea"/>
+        <cube:component rdf:resource="http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_refPeriod"/>
+        <rdfs:label xml:lang="es">Estructura de los datos relacionados con los sectores contaminantes que generan los gases de efecto invernadero de alcance 1, 2 y 3</rdfs:label>
+        <skos:notation>DSD_EmisionesPorSector</skos:notation>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

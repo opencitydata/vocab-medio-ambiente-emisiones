@@ -1,0 +1,51 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante> a skos:ConceptScheme;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/dioxido-de-carbono> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/oxido-nitroso> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/metano> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/hidrofluorocarburos> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/perfluorocarburos> ;
+    skos:hasTopConcept <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/hexafluoruro-de-azufre> ;
+    dc:creator "Francisco Yedro (Universidad Politécnica de Madrid)" ;
+    dc:date "2020-12-27"^^xsd:date ;
+    skos:prefLabel "Tipos de "@es ;
+    dc:title "Tesauro que recoge los tipos de contaminantes que emiten gases de efecto invernadero (GEI)"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/dioxido-de-carbono> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante> ;
+  skos:notation "dioxido-de-carbono" ;
+	skos:prefLabel "dioxido-de-carbono" ;
+  skos:prefLabel "Dióxido de carbono (CO2)"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/oxido-nitroso> a skos:Concept ;
+  skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante> ;
+  skos:notation "oxido-nitroso" ;
+  skos:prefLabel "oxido-nitroso" ;
+  skos:prefLabel "Óxido nitroso (N2O)"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/metano> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante> ;
+  skos:notation "metano" ;
+	skos:prefLabel "metano" ;
+  skos:prefLabel "Metano (CH4)"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/hidrofluorocarburos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante> ;
+  skos:notation "hidrofluorocarburos" ;
+	skos:prefLabel "hidrofluorocarburos" ;
+  skos:prefLabel "Hidrofluorocarburos (HFC)"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/perfluorocarburos> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante> ;
+  skos:notation "perfluorocarburos" ;
+	skos:prefLabel "perfluorocarburos" ;
+  skos:prefLabel "Perfluorocarburos (PFC)"@es .
+
+<http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante/hexafluoruro-de-azufre> a skos:Concept ;
+	skos:inScheme <http://vocab.linkeddata.es/datosabiertos/kos/medio-ambiente/emisiones/tipo-compuesto-contaminante> ;
+  skos:notation "hexafluoruro-de-azufre" ;
+	skos:prefLabel "hexafluoruro-de-azufre" ;
+  skos:prefLabel "Hexafluoruro de azufre (SF6)"@es .
