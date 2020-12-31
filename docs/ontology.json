@@ -1,0 +1,268 @@
+[ {
+  "@id" : "http://purl.org/dc/elements/1.1/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasFormat",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/issued",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/cube#component",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/cubo-emisiones",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/contributor" : [ {
+    "@value" : "Edna Ruckaus (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Paola Espinoza Arias (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  } ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "Francisco Yedro (Ontology Engineering Group - Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Oscar Corcho (Ontology Engineering Group - Universidad Politécnica de Madrid, LocaliData)"
+  } ],
+  "http://purl.org/dc/elements/1.1/rights" : [ {
+    "@value" : "Creative Commons Attribution 4.0 International (CC BY 4.0)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@value" : "2020-12-09"
+  } ],
+  "http://purl.org/dc/terms/hasFormat" : [ {
+    "@value" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/cubo-emisiones.owl"
+  } ],
+  "http://purl.org/dc/terms/issued" : [ {
+    "@value" : "2020-12-30"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "es",
+    "@value" : "Vocabulario para la representación de los cubos de datos de emisiones de gases de efecto invernadero"
+  }, {
+    "@language" : "en",
+    "@value" : "Vocabulary for data cubes representation of greenhouse effect gases"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://purl.org/linked-data/cube"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/cubo-emisiones"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#CS_EmisionesPorSector_tipoAlcance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#ComponentSpecification" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoAlcance"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#CS_EmisionesPorSector_tipoSector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#ComponentSpecification" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoSector"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#electricidadFacturada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionPerCapita",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionPorPIB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionesGEI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoAlcance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoCompuestoContaminante",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoSector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_emisionPerCapita",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#ComponentSpecification" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionPerCapita"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_emisionPorPIB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionPorPIB"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_refArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_refPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_emisionesGEI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionesGEI"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_refArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_refPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_tipoCompuestoContaminante",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#tipoCompuestoContaminante"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_electricidadFacturada",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#electricidadFacturada"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_emisionesGEI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#emisionesGEI"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_refArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refArea"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_refPeriod",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#ComponentSpecification" ],
+  "http://purl.org/linked-data/cube#dimension" : [ {
+    "@id" : "http://purl.org/linked-data/sdmx/2009/dimension#refPeriod"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPerCapitaYPIB",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataStructureDefinition" ],
+  "http://purl.org/linked-data/cube#component" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_emisionPerCapita"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_emisionPorPIB"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_refArea"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPerCapitaYPIB_refPeriod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estructura de los datos relacionados con los indicadores obtenidos debido a las emisiones de gases efecto invernadero emitidas por número de habitante y por unidad de PIB"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "DSD_EmisionesPerCapitaYPIB"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPorCompuesto",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataStructureDefinition" ],
+  "http://purl.org/linked-data/cube#component" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_emisionesGEI"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_refArea"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_refPeriod"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorCompuesto_tipoCompuestoContaminante"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estructura de los datos relacionados con los compuestos contaminantes que generan los gases de efecto invernadero de alcance 1"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@language" : "es",
+    "@value" : "DSD_EmisionesPorCompuesto"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPorElectricidad",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataStructureDefinition" ],
+  "http://purl.org/linked-data/cube#component" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_electricidadFacturada"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refArea"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refPeriod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estructura de los datos relacionados con la electricidad facturada generan los gases de efecto invernadero de alcance 2 y 3"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "DSD_EmisionesPorElectricidad"
+  } ]
+}, {
+  "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/DSD_EmisionesPorSector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual", "http://purl.org/linked-data/cube#DataStructureDefinition" ],
+  "http://purl.org/linked-data/cube#component" : [ {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#CS_EmisionesPorSector_tipoAlcance"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/def/medio-ambiente/emisiones#CS_EmisionesPorSector_tipoSector"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorElectricidad_refPeriod"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_emisionesGEI"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_refArea"
+  }, {
+    "@id" : "http://vocab.linkeddata.es/datosabiertos/recurso/medio-ambiente/emisiones/CS_EmisionesPorSector_refPeriod"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estructura de los datos relacionados con los sectores contaminantes que generan los gases de efecto invernadero de alcance 1, 2 y 3"
+  } ],
+  "http://www.w3.org/2004/02/skos/core#notation" : [ {
+    "@value" : "DSD_EmisionesPorSector"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#notation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+} ]

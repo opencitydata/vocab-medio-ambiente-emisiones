@@ -1,0 +1,62 @@
+<h2 id="desc" class="list">Vocabulary for data cubes representation of greenhouse effect gases: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+<span class="markdown">For the generation of the greenhouse gas emissions data cubes, the vocabulary W3C Data Cube is reused. This vocabulary is a recommendation for the publication of multidimensional data that facilitates its linking with other data and related concepts. Likewise, this vocabulary is compatible with the SDMX (Statistical Data and Metadata eXchange) standard, which allows the sharing and exchange of statistical data and metadata between organizations. SDMX is an ISO International Standard IS-17369, which is based on the concepts of dimensions, attributes and measures described as a data structure.</span>
+
+<center><img src="resources/images/qb-fig1.png"><figcaption>Figure 1. - W3C Data Cube vocabulary diagram</figcaption></center>
+
+<span class="markdown">As can be seen in Figure 1, the W3C Data Cube contains several concepts and properties that allow describing data for different levels of aggregation. However, in order to facilitate the explanation of those concepts and properties that are used to represent the data cubes of the municipal register, the extract from Figure 2 will be used. For simplicity, blank nodes have been used to refer to the different instances of <a href="https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentspecification" target="_blank">ComponentSpecification</a> that must be generated to describe each measure or dimension.</span>
+
+<center><img src="resources/images/CuboDatosExtracto.png"><figcaption>Figure 2. - W3C Data Cube vocabulary abstract</figcaption></center>
+
+<span class="markdown">
+
+Specifically, data cubes are made up of several dimensions and measures that allow defining different observations. In Figure 2, the vocabulary, represented by the prefix qb, is organised around the concept of [qb:DataSet](https://www.w3.org/TR/vocab-data-cube/#reference-datasets), which is defined as a collection of data that corresponds to a structure defined by [qb:DataStructureDefinition}(https://www.w3.org/TR/vocab-data-cube/#dsd) and that is materialised through a set of observations represented by [qb:Observation](https://www.w3.org/TR/vocab-data-cube/#reference-datasets). Las dimensiones y medidas que se pueden definir en la estructura de cada dataset se representan mediante:
+
+- [qb:DimensionProperty](https://www.w3.org/TR/vocab-data-cube/#dsd-dimensions): a component that identifies the dimensions of the observations with respect to time, geographic region, etc. Dimensions typically represent concepts, which are taken from a list of codes also known as classifications, which are typically identified through the use of the SKOS vocabulary.
+- [qp:MeasurementProperty](https://www.w3.org/TR/vocab-data-cube/#dsd-dimensions): a component that represents the measured value of the observed data, such as the value of greenhouse gas emissions, the indicator of emissions by population, by gross inland product, etc..
+
+For the definition of these dimensions and measures, several reference vocabularies that are used in other projects at national and international level are also reused:
+
+1. SDMX vocabularies (Statistical Data and Metadata eXchange):
+  - sdmx-dimension: For the definition of dimensions such as reference area, reference period.
+
+2. Other SKOS lists:
+   - For the representation of the years of the dimension of the reference period, the list of time interval codes of the British government will be reused.
+   - For the types of scope, a list of codes has been created with the three types of scope of greenhouse gas emissions.
+   - For the types of sector, a list of codes has been created with the different types of sectors that participate in greenhouse gas emissions.
+   - For the types of polluting compounds, a list of codes has been created with the different pollutants that cause greenhouse gas emissions.
+
+ Finally, 4 types of measures are included:
+
+1. [emisiones:emisionesGEI](#emisionesGEI) which is the measure provided in kt CO2 equivalent
+1. [emisiones:emisionPerCapita](#emisionPerCapita) that provides the emissions indicator expressed in tons of dioxide equivalent per inhabitant (t CO2 eq / inhab)
+1. [emisiones:emisionPorPIB](#emisionPorPIB) that provides the indicator of emissions per unit of Gross Domestic Product (GDP), expressed in tons of carbon dioxide equivalent per million inhabitants (t CO2eq / million € 2000)
+1. [emisiones:electricidadFacturada](#electricidadFacturada) which is the measure provided in GWh
+
+By having all the vocabularies necessary for the representation of the requirements, it is possible to define the cubes that will be obtained for the greenhouse gas emissions data. It is important to mention that the requirements that are represented are those that include the statistical exploitation of the emissions data.
+
+</span>
+
+<h3>Emissions data cube by sector<span class="backlink"> back to <a href="#toc">&iacute;ndice</a></span></h3>
+
+<span class="markdown">This cube represents the data related to the sector that emits greenhouse gases. Specifically, the reference period, the reference area, the sector that produced it and the scope to which the issue belongs (1,2 or 3) have been defined as dimensions. As a general measure, the value of GHG emissions given in kilotonnes of carbon dioxide equivalent has been defined, since it allows encapsulating the data referring to total gas emissions according to year, location, scope and sector. The corresponding diagram is shown in Figure 3.</span>
+
+<center><img src="resources/images/CuboDatosSector.png"><figcaption>Figure 3. - Emissions data cube by sector</figcaption></center>
+
+<h3>Emissions data cube by pollutant compound<span class="backlink"> back to <a href="#toc">&iacute;ndice</a></span></h3>
+
+<span class="markdown">This cube represents the data related to the polluting compound that makes up greenhouse gases. Specifically, the reference period, the reference area, and the polluting compound have been defined as dimensions. As a general measure, the value of GHG emissions given in kilotonnes of carbon dioxide equivalent has been defined, since it allows encapsulating the data referring to total gas emissions by year, location, scope and polluting compound. The corresponding diagram is shown in Figure 4.</span>
+
+<center><img src="resources/images/CuboDatosCompuesto.png"><figcaption>Figure 4. - Emissions data cube by pollutant compound</figcaption></center>
+
+<h3>Emissions data cube for billed electricity<span class="backlink"> back to <a href="#toc">&iacute;ndice</a></span></h3>
+
+<span class="markdown">This cube represents the data related to the electricity billed that influences the emissions of scope 2. Specifically, the reference period and the reference area have been defined as dimensions. As a general measure, the value of the electricity billed provided in GWh has been defined, since it allows encapsulating the data referring to the total electricity billed according to year and location. The corresponding diagram is shown in Figure 5.</span>
+
+<center><img src="resources/images/CuboElectricidadFacturada.png"><figcaption>Figure 5. - Emissions data cube for billed electricity</figcaption></center>
+
+<h3>Data cube of emissions indicators according to GDP and per capita income<span class="backlink"> back to <a href="#toc">&iacute;ndice</a></span></h3>
+
+<span class="markdown">This cube represents the data related to the greenhouse gas emissions indicators according to the population number and the gross domestic product (GDP). Specifically, the reference period and the reference area have been defined as dimensions. As a general measure, two values have been defined, the emission according to the number of population and provided in tons of dioxide equivalent per inhabitant (t CO2 eq / inhab) and the emission according to GDP provided in tons of carbon dioxide equivalent per million inhabitants ( t CO2eq / million € 2000). The corresponding diagram is shown in Figure 6.</span>
+
+<center><img src="resources/images/CuboIndicadores.png"><figcaption>Figure 6. - Data cube of emissions indicators according to GDP and per capita income</figcaption></center>
